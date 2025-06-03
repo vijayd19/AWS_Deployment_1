@@ -16,7 +16,7 @@ def upload_files():
 def main():
     # Get API key from Streamlit secrets
     try:
-        openai_api_key = st.secrets["openai"]["api_key"]
+        openai_api_key = st.secrets["OPENAI_API_KEY"]
         os.environ["OPENAI_API_KEY"] = openai_api_key
         openai.api_key = openai_api_key
     except KeyError:
