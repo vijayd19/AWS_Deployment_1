@@ -31,7 +31,7 @@ def main():
     st.set_page_config(page_title="Chat with PDF")
 
     # Display the header for the Streamlit app
-    st.header("LangChain RAG App")
+    st.header("Ask queestions related the PDF")
 
     # Allow users to upload a PDF file
     pdfs = upload_files()
